@@ -9,7 +9,7 @@
 }
 
 header {
-  height: 10vh;
+  height: 75px;
   background-color: grey;
 }
 
@@ -19,19 +19,21 @@ header .div {
 }
 
 main {
-  height: 90vh;
+  height: calc(100vh - 75px);
   background-color: lightgoldenrodyellow;
+
 }
 
 .main-wrapper {
   height: 100%;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
 }
 
 .container {
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
   border: 5px solid black;
   border-radius: 20px;
   overflow: hidden;
@@ -40,10 +42,15 @@ main {
 
 .box {
   width: calc(100% / 10);
-  height: calc(100% / 10);
+  aspect-ratio: 1/1;
   border: 1px solid black;
   background-color: lightgray;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.box.active {
+  background-color: rgb(100, 100, 100) ;
 }
