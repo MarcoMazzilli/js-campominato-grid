@@ -3,7 +3,47 @@
   padding: 0;
   box-sizing: border-box;
 }
-h1 {
-  font-size: 3rem;
-  background-color: brown;
+
+.d-flex {
+  display: flex;
+}
+
+header {
+  height: 10vh;
+  background-color: grey;
+}
+
+header .div {
+  width: calc(100% / 3);
+  border: 1px solid black;
+}
+
+main {
+  height: 90vh;
+  background-color: lightgoldenrodyellow;
+}
+
+.main-wrapper {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 800px;
+  height: 800px;
+  border: 5px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  border: 1px solid black;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
