@@ -8,9 +8,12 @@
   display: flex;
 }
 
+/* utilities */
+
 header {
   height: 50px;
   background-color:white;
+  padding: 5px;
 }
 
 header .div {
@@ -37,6 +40,7 @@ main {
   border-radius: 20px;
   overflow: hidden;
   flex-wrap: wrap;
+  display: flex;
 }
 
 .box {
@@ -59,6 +63,12 @@ main {
 header div:first-child {
   display: flex;
   justify-content: flex-end;
+}
+
+div:first-child select {
+  font-size: 1.5rem;
+  padding: 0px 30px;
+  border: none;
 }
 
 /* ========== SCORE DECORATION ============ */
